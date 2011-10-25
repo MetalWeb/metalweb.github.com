@@ -1,0 +1,30 @@
+#Productos{
+margin-top:45px;
+margin-bottom:30px;
+}
+
+
+#Postres{
+width:300px;
+height:300px;
+border: black solid;
+margin-left:230px;
+float:left;
+}
+
+#Bocaditos{
+width:300px;
+height:300px;
+border: black solid;
+margin-left:700px;
+}
+
+#todo{
+padding-bottom:20px;
+}
+
+#carritoVenta{
+position:absolute; top:320px;
+position:absolute; left:1150px;
+}
+
