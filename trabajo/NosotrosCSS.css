@@ -1,0 +1,33 @@
+#gerentes{
+width:300px;
+height:300px;
+border: black solid;
+margin-top:45px;
+margin-left:20px;
+float:left;
+}
+
+#todo{
+padding-bottom:10px;
+}
+
+#InfoNosotros{
+width:350px;
+height:310px;
+margin-left:450px;
+padding-top:50px;
+font-style: black;
+}
+
+.informacion{
+color:black;
+}
+
+#noso{
+ background-color:#862C15;
+ width:860px;
+ height:450px;
+ margin-top:50px;
+ margin-left:180px;
+ margin-bottom:50px;
+}
