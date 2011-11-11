@@ -8,31 +8,61 @@ $(document).ready(function() {
 		$("#postre6").hide();
 		$("#postre7").hide();
 		
-		var x = 1;
+		var xAlbumPostre = 1;
 		
-		function ocultar_for() {
-			if(x>=1){
-				$("#postre"+x).hide();
-				x=x-1;
-				$("#postre"+x).show();
+		function ocultar_forPostres() {
+			if(xAlbumPostre>1){
+				$("#postre"+xAlbumPostre).hide();
+				xAlbumPostre=xAlbumPostre-1;
+				$("#postre"+xAlbumPostre).show();
 			}
 		}
 		
-		function ocultar_bac() {
-		if(x<7){
-			$("#postre"+x).hide();
-			x=x+1;
-			$("#postre"+x).show();
+		function ocultar_bacPostres() {
+		if(xAlbumPostre<7){
+			$("#postre"+xAlbumPostre).hide();
+			xAlbumPostre=xAlbumPostre+1;
+			$("#postre"+xAlbumPostre).show();
 		}
 		
 		}
 		
-		$("#flecha_der").click(ocultar_bac);
-		$("#flecha_izq").click(ocultar_for);
+		$("#flecha_der").click(ocultar_bacPostres);
+		$("#flecha_izq").click(ocultar_forPostres);
+		
+		
+		
+		
+		var xAlbumBocadito = 1;
+		function ocultar_forBocaditos() {
+		if(xAlbumBocadito>1){
+			$("#bocadito"+xAlbumBocadito).hide();
+			xAlbumBocadito=xAlbumBocadito-1;
+			$("#bocadito"+xAlbumBocadito).show();
+		}
+
+		}
+		
+		
+		function ocultar_bacBocaditos() {
+		if(xAlbumBocadito<1){
+			$("#bocadito"+xAlbumBocadito).hide();
+			xAlbumBocadito=xAlbumBocadito+1;
+			$("#bocadito"+xAlbumBocadito).show();
+		}
+		
+		}
+		$("#flecha_der").click(ocultar_bacBocaditos);
+		$("#flecha_izq").click(ocultar_forBocaditos);
+	
+	
+		
 	
 	
 	
-	 $("#cel").hide();
+	
+	
+	$("#cel").hide();
 	var x=0;
 	var interval_id = setInterval(function() { cambiarbaner2(); },3000);
 
