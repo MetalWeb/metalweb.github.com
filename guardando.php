@@ -42,9 +42,9 @@ $insertar = conexion("INSERT INTO pedido (producto, precio, cantidad) VALUES('$p
 }
 
 if($pagina == "bocadito")
-header("Location: productosBocaditos.php");
+header("Location: productosBocaditos.html");
 if($pagina == "postre")
-header("Location: productosPostres.php");
+header("Location: productosPostres.html");
 
 
 ?>
