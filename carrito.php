@@ -76,15 +76,21 @@
   <?php $pro = conexion("SELECT * FROM pedido"); while ($rsEmp = mysql_fetch_assoc($pro)) { ?>
   <tr>
     <td><?php  echo $rsEmp['producto']; ?></td>
-    <td><?php echo $rsEmp['precio']; ?></td>
+    <td>S/.<?php echo $rsEmp['precio']; ?></td>
     <td><?php echo $rsEmp['cantidad']; ?></td>
-	<td><?php echo ($rsEmp['cantidad'] * $rsEmp['precio']); ?></td>
+	<td>S/.<?php echo ($rsEmp['cantidad'] * $rsEmp['precio']); ?></td>
 	<form method="post" action="eliminar.php">
 	<td><button class="eliminarpro"><input name="idpro" value="<?php echo $rsEmp['id']; ?>" type="hidden"/><img src="imagenes/eliminar.png" /></button></td>
 	</form>
   </tr>
   <?php } ?>
 </table>
+
+</div>
+
+
+<div>
+<p id="totalAcumulado">Total: S/.<?php $suma = conexion("SELECT sum(precio*cantidad) FROM pedido"); $rsEmp = mysql_fetch_assoc($suma); echo $rsEmp['sum(precio*cantidad)'];?>.00 </p>
 </div>
 		
 		
