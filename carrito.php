@@ -75,12 +75,12 @@
   </tr>
   <?php $pro = conexion("SELECT * FROM pedido"); while ($rsEmp = mysql_fetch_assoc($pro)) { ?>
   <tr>
-    <td><?php echo $rsEmp['producto']; ?></td>
+    <td><?php  echo $rsEmp['producto']; ?></td>
     <td><?php echo $rsEmp['precio']; ?></td>
     <td><?php echo $rsEmp['cantidad']; ?></td>
 	<td><?php echo ($rsEmp['cantidad'] * $rsEmp['precio']); ?></td>
 	<form method="post" action="eliminar.php">
-	<td><button class="eliminarpro"><input name="idpro" value="<?php echo $rsEmp['id']; ?>" type="hidden"/><img src="eliminar.png" /></button></td>
+	<td><button class="eliminarpro"><input name="idpro" value="<?php echo $rsEmp['id']; ?>" type="hidden"/><img src="imagenes/eliminar.png" /></button></td>
 	</form>
   </tr>
   <?php } ?>
