@@ -22,11 +22,9 @@ $cantidad2 = limpiar($_POST["cantidad2"]);
 
 $precio3 = limpiar($_POST["precio3"]);
 $cantidad3 = limpiar($_POST["cantidad3"]);
-
+$boton = limpiar($_POST["botonCom"]);
 
 $pagina = limpiar($_POST["pagina"]);
-
-
 
 if($cantidad1 > 0 && isset($_REQUEST["tipo1"])){
 $producto1 = limpiar($_POST["tipo1"]);
@@ -40,12 +38,15 @@ if($cantidad3 > 0 && isset($_REQUEST["tipo3"])){
 $producto3 = limpiar($_POST["tipo3"]);
 $insertar = conexion("INSERT INTO pedido (producto, precio, cantidad) VALUES('$producto3','$precio3','$cantidad3')");
 }
-
+if($boton == "Comprar"){
+header("Location: carrito.php"); 
+}
+else{
 if($pagina == "bocadito")
 header("Location: productosBocaditos.html");
 if($pagina == "postre")
 header("Location: productosPostres.html");
-
+}
 
 ?>
 
