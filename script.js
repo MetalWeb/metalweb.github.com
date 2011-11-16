@@ -88,23 +88,73 @@ $(document).ready(function() {
 	 
 	 
 	 
-	 $("#paso2").hide();
-	 $("#paso3").hide();
+
+		
+	$("#paso2").hide();
+	$("#paso3").hide();
+	  var xPasos = 1;	
+	  var ypagina = 1;
 	 
-	 
-		var xPasos = 1;	
-		$("#next").click(function siguiente() {
-		  if(xPasos<2){
-			 $("#paso"+xPasos).hide();	
-             xPasos=xPasos+1;			 
-			 $("#paso"+xPasos).show();
-		  }
-		  else{
-		  $("#botonnext").hide();
+    $("#next").click(function(){ 
+	  
+        if(ypagina == 1){
+           $("#paso"+xPasos).hide();	
+           xPasos=xPasos+1;	
+           ypagina++;			 
+           $("#paso"+xPasos).show();
+        }	
+        else{
+         var nombreApellido = /(^([a-z]{1,20})|^)$/	
+         
+         var telefono = /(^([0-9]{1,8})|^)$/	
+         var dni = /(^([0-9]{8,8})|^)$/
+         var distritoSelec = document.datosEnvio.entradaselect.selectedIndex;
+		 
+         if(!nombreApellido.test($("#carritoNombre").val()) || $("#carritoNombre").val().length == 0){
+            alert("hay un herror con su Nombre")
+         }else if(!nombreApellido.test($("#carritoApellidoP").val()) || $("#carritoApellidoP").val().length == 0 ){
+            alert("hay un herror con su Apellido Paterno")
+         }else if(!nombreApellido.test($("#carritoApellidoM").val()) || $("#carritoApellidoM").val().length == 0){
+            alert("hay un herror con su Apellido Materno")
+         }else if(!dni.test($("#carritoDNI").val()) || $("#carritoDNI").val().length == 0){
+            alert("hay un herror con su DNI")
+         }else if($("#carritoDireccion").val().length == 0){
+            alert("hay un herror con su dirrencion")
+         }else if(distritoSelec == 0){
+            alert("Usted no selecciono algun distrito")
+         }else if($("#carritoRef").val().length == 0){
+            alert("Hay un error con su referencia")
+         }else if(!telefono.test($("#carritoTel").val()) || $("#carritoTel").val().length == 0){
+            alert("hay un herror con su telefono")
+         }else{
+  		  $("#botonnext").hide();
 		  $("#paso2").hide();
 		  $("#paso3").show();
-		  }
-	    });
+        }
+       }
+    }); 
+	
+	
+	$("#boton").click(function(){
+	
+	 var email = /^[^@\s]+@[^@\.\s]+(\.[^@\.\s]+)+$/
+	 var nombreApellido = /(^([a-z]{1,20})|^)$/
+	 
+	 
+	 if(!nombreApellido.test($("#contacNombre").val()) || $("#contacNombre").val().length == 0){
+         alert("hay un herror con su Nombre")
+     }else if(!nombreApellido.test($("#contacApellido").val()) || $("#contacApellido").val().length == 0){
+         alert("hay un herror con sus Apellidos")
+     }else if(!email.test($("#comtacEmail").val()) || $("#comtacEmail").val().length == 0){
+          alert("hay un error con su email")
+	 }else if($("#mensaje").val().length == 0){
+           alert("No escribio su mensaje")
+	 }else{
+	     alert("su mensaje se envio correctamente")
+         document.getElementById("contacto").reset();
+	 }	 
+	});
+	
 		
 		
 		
