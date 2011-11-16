@@ -63,22 +63,22 @@
 	}
 	
 	#navi li a:hover{
-	background-color:#9D360D;
-	color:#FFE4B5;
+		background-color:#9D360D;
+		color:#FFE4B5;
 	}
 	
 	
 	
 	#mapaDeSite{
-	width:80x;
-	height:6px;
-	float:right;
-	margin-right:0.5%;
-	margin-top:15px;
+		width:80x;
+		height:6px;
+		float:right;
+		margin-right:0.5%;
+		margin-top:15px;
 	}
 	
 	#mapaDeSite a:hover{
-	color:#FFE4B5;
+		color:#FFE4B5;
 	}
 	
 	
@@ -217,40 +217,40 @@
 
 
 #gerentes{
-width:400px;
-height:300px;
-border: black solid;
-margin-top:55px;
-margin-left:20px;
-float:left;
+	width:400px;
+	height:300px;
+	border: black solid;
+	margin-top:55px;
+	margin-left:20px;
+	float:left;
 }
 
 
 #InfoNosotros{
-width:350px;
-height:310px;
-margin-left:450px;
-padding-top:30px;
-font-style: black;
+	width:350px;
+	height:310px;
+	margin-left:450px;
+	padding-top:30px;
+	font-style: black;
 
 }
 
 .informacion{
-color:black;
+	color:black;
 }
 
 #noso{
- background-color:#862C15;
- width:860px;
- height:450px;
- margin: 0 auto;
- margin-top: 80px;
- margin-bottom: 60px;
- border:solid #FFE4B5;
+	 background-color:#862C15;
+	 width:860px;
+	 height:450px;
+	 margin: 0 auto;
+	 margin-top: 80px;
+	 margin-bottom: 60px;
+	 border:solid #FFE4B5;
 }
 
 #tituloNosotros{
-color: #FFE4B5;
+	color: #FFE4B5;
 }
 
 
@@ -288,15 +288,15 @@ color: #FFE4B5;
 }
 
 .imagenes{
-border: black solid 2px;
+	border: black solid 2px;
 }
 
 .tituloImagen{
-font-size:30px;
+	font-size:30px;
 }
 
 #todo{
-padding-bottom:20px;
+	padding-bottom:20px;
 }
 
 #cart{
@@ -352,15 +352,15 @@ a img:hover{
 }
 
 #cant{
- BORDER-BOTTOM-WIDTH: 1px;  
- BORDER-LEFT-WIDTH: 1px;
- BORDER-RIGHT-WIDTH: px;
- BORDER-TOP-WIDTH: 1px;
- width:0.5px;
+	 BORDER-BOTTOM-WIDTH: 1px;  
+	 BORDER-LEFT-WIDTH: 1px;
+	 BORDER-RIGHT-WIDTH: px;
+	 BORDER-TOP-WIDTH: 1px;
+	 width:0.5px;
  }
 
  input#cant{
- width:50px;
+	width:50px;
  }
 
 .productos{
@@ -403,24 +403,24 @@ a img:hover{
 }
 
 #mapa{
-margin-top:50px;
+	margin-top:50px;
 
 }
 #mapa li{
-		margin-bottom: 10px; 
-		color: #FFE4B5;
+	margin-bottom: 10px; 
+	color: #FFE4B5;
 }
 
 #mapa li a{
-		text-decoration:none;
-		font-size:20px;
-		color: #FFE4B5;
-		padding-top:12px;
+	text-decoration:none;
+	font-size:20px;
+	color: #FFE4B5;
+	padding-top:12px;
 		
 	}
 
 #mapa li a:hover{
-		color:orange;
+	color:orange;
 }
 
 
@@ -439,25 +439,25 @@ margin-top:50px;
 
 
 #InformaciónDireccion{
-width:270px;
-height:354px;
-border: #FFE4B5 solid 2px;
-padding: 5px;
-margin-top:60px;
-margin-left:14%;
+	width:270px;
+	height:354px;
+	border: #FFE4B5 solid 2px;
+	padding: 5px;
+	margin-top:60px;
+	margin-left:14%;
 }
 
 .contac{
-font-size:16px;
-text-decoration:underline;
-font-weight:bold;
-margin-left:27%;
+	font-size:16px;
+	text-decoration:underline;
+	font-weight:bold;
+	margin-left:27%;
 }
 
 
 #cuestionario{
-margin-top:50px;
-padding-left: 5%;
+	margin-top:50px;
+	padding-left: 5%;
 }
 
 #cuestionario input[type=text]
@@ -518,10 +518,10 @@ padding-left: 5%;
 }
 
 .InicioMensaje{
-margin-left:300px;
-font-weight:bold;
-font-size:19px;
-margin-top:50px;
+	margin-left:300px;
+	font-weight:bold;
+	font-size:19px;
+	margin-top:50px;
 }
 
 
@@ -570,10 +570,10 @@ tr#cabeza{
 
 
 #paso1{
- overflow:auto;
- width:970px;
- height: 270px;
- margin-left: 11%;
+	 overflow:auto;
+	 width:970px;
+	 height: 270px;
+	 margin-left: 11%;
  
 }
 
@@ -750,8 +750,8 @@ tr#cabeza{
 }
 
 #form1Carrito{
-		margin-top:30px;
-		margin-left: 100px;
+	margin-top:30px;
+	margin-left: 100px;
 }
 
 #pro{
@@ -761,27 +761,27 @@ tr#cabeza{
 
 
 #tablaProducto td{
-border:solid black 1px;
+	border:solid black 1px;
 
 }
 
 #tablaProducto th{
-border:solid black 1px;
+	border:solid black 1px;
 }
 
 #tablaProducto {
-margin-left:0px;
+	margin-left:0px;
 }
 .eliminarpro{
-height:50px;
-margin-left:50px;
+	height:50px;
+	margin-left:50px;
 }
 
 
 
 #totalAcumulado{
-position:relative;
-left:840px;
-width:130px;
+	position:relative;
+	left:840px;
+	width:130px;
 }
 	
