@@ -3,7 +3,7 @@
 		font-family:verdana;
 		color:#800000;
 	}
-	
+
 	body{
 		background-color:#9D360D;
 	}
@@ -98,7 +98,8 @@
 	}
 	
 	#sugerencia{
-		margin: 0 auto;
+		
+		position:relative;
 		width:860px;
 		height:450px;
 		margin: 0 auto;
@@ -170,6 +171,7 @@
 		margin-right:5%;
 		float:right;
 		margin-top:-150px;
+		
 	}
 	
 	#right_p4{
@@ -180,7 +182,6 @@
 		width: 150px;
 		height: 144px;
 	}
-	
 	
 	.left_p{
 		float: left;
@@ -242,9 +243,9 @@ color:black;
  background-color:#862C15;
  width:860px;
  height:450px;
- margin-top:50px;
- margin-left:180px;
- margin-bottom:50px;
+ margin: 0 auto;
+ margin-top: 80px;
+ margin-bottom: 60px;
  border:solid #FFE4B5;
 }
 
@@ -266,27 +267,28 @@ color: #FFE4B5;
 
 
 #Productos{
-margin-top: 60px;
-margin-bottom:150px;
+	margin: 0 auto;
+	width: 800px;
+	margin-top: 30px;
+
 }
 
 
 #Postres{
-width:300px;
-height:300px;
-margin-left:230px;
-margin-top:-30px;
-float:left;
+	float: left;
+	margin-left:25px;
 }
 
 #Bocaditos{
-width:300px;
-height:300px;
-margin-left:700px;
+	float: right;
+}
+
+.clear{
+	clear: both;
 }
 
 .imagenes{
-border: black solid;
+border: black solid 2px;
 }
 
 .tituloImagen{
@@ -297,13 +299,22 @@ font-size:30px;
 padding-bottom:20px;
 }
 
+#cart{
+	float:right;
+	margin-right: 8%;
+	margin-top: 1%;
+}
+
 #carritoVenta{
-position:absolute; top:330px;
-position:absolute; left:1130px;
+	border: black dashed 2px;
 }
 
 a img:hover{
-	 border:solid 2px #FFE4B5;
+	border:solid 2px #FFE4B5;
+}
+
+#carritoVenta:hover{
+	border: dashed 2px #FFE4B5;
 }
 
 
@@ -323,19 +334,20 @@ a img:hover{
 
 
 #contenedor{
+	margin: 0 auto;
 	margin-top:80px;
 	width: 1200px;
 }
 #flecha_der{
 	float: right;
 	cursor: pointer;
-	margin-right:350px;
+	margin-right:345px;
 	margin-top:58px;
 }
 #flecha_izq{
 	float: left;
 	cursor: pointer;
-	margin-left:350px;
+	margin-left:370px;
 	margin-top:58px;
 }
 
@@ -350,17 +362,19 @@ a img:hover{
  input#cant{
  width:50px;
  }
- 
- 
+
 .productos{
-	width: 310px;
-	margin: 0 auto;
+	width: 400px;
 	text-align:center;
+	float: left;
+	margin-left: 8px;
 }
 
 #TextoTipoProducto{
 	margin-left:170px;
 }
+
+
 
 
 
@@ -424,39 +438,44 @@ margin-top:50px;
 
 
 
-
-
-
 #InformaciónDireccion{
 width:270px;
 height:354px;
-border: #FFE4B5 solid;
+border: #FFE4B5 solid 2px;
+padding: 5px;
 margin-top:60px;
-margin-left:170px;
+margin-left:14%;
 }
 
 .contac{
 font-size:16px;
 text-decoration:underline;
 font-weight:bold;
-margin-left:300px;
+margin-left:27%;
 }
 
 
 #cuestionario{
-margin-top:100px;
+margin-top:50px;
+padding-left: 5%;
+}
+
+#cuestionario input[type=text]
+{
+    border: 1px solid #aaa;
+    width: 200px;
+    padding: 4px;
+	margin-bottom: 15px;
+	margin-left: 80px;
 }
 
 #mapaG{
  float:right;
  margin-top:60px;
- margin-right:120px;
+ margin-right:15%;
 }
 
-#mensaje{
-float:right;
-margin-right:300px;
-}
+
 
 #boton{
 margin-top:30px;
@@ -517,14 +536,11 @@ margin-top:50px;
 
 
 
-
 #dulcesDeseos{
-	
 	margin-left:65px;
 }
 
 table{
-
 	margin-left:8%;
 	height:100px;
 	width:950px;
@@ -532,9 +548,13 @@ table{
 }
 
 #dulcesDeseos{
-	margin-left:6%;
+	position: relative;
 	margin-top:70px;
+	margin-left: 10%;
+	
 }
+
+
 
 h3{
 	font-size:15px;
@@ -546,31 +566,104 @@ tr#cabeza{
 }
 
 
+#paso1{
+ overflow:auto;
+ width:970px;
+ height: 270px;
+ margin-left: 11%;
+ 
+}
 
 #paso2{
-	border:solid black 1px;
-	margin-left:8%;
+
+	margin-left:11%;
 	margin-top:30px;
-	width:950px;
+	width: 1000px;
 	height:50%px;
 }
 
 #paso3{
-	border:solid black 1px;
-	margin-left:8%;
+
+	margin-left:11%;
 	margin-top:30px;
-	width:950px;
+	width:1000px;
 	height:50%px;
 	margin-bottom:5%;
 }
 
+#carritoNombre{
+	margin-left: 110px;
+}
 
+#carritoApellidoM{
+	margin-left: 34px;
+}
+
+#carritoDireccion{
+	margin-left: 98px;
+}
+
+#carritoRef{
+	margin-left: 86px;
+}
+
+#carritoApellidoP{
+	margin-left: 40px;
+}
+
+#carritoDNI{
+	margin-left: 145px;
+}
+
+#distritos{
+	margin-left: 116px;
+	border: 1px solid #aaa;
+    width: 200px;
+    padding: 4px;
+	margin-bottom: 15px;
+}
+
+#labeltelf{
+	margin-left: 47px;
+}
+
+#carritoTel{
+	margin-left: 107px;
+}
+
+#carritoNOpe{
+	margin-left: 100px;
+}
+
+#carritoFechaT{
+	margin-left: 83px;
+}
+
+#carritoMonto{
+	margin-left: 227px;
+}
 #headF{
 	border-bottom:solid black 1px;
 	height:20px;
-	width:950px;
+	width:1000px;
 	text-align:center;
 	font-size:10px;	
+}
+
+#paso2 input[type=text]
+{
+    border: 1px solid #aaa;
+    width: 200px;
+    padding: 4px;
+	margin-bottom: 15px;
+}
+
+#paso3 input[type=text]
+{
+    border: 1px solid #aaa;
+    width: 200px;
+    padding: 4px;
+	margin-bottom: 15px;
 }
 
 #botonnext{
@@ -655,7 +748,7 @@ tr#cabeza{
 
 #form1Carrito{
 		margin-top:30px;
-		margin-left:150px;
+		margin-left: 100px;
 }
 
 #pro{
@@ -663,15 +756,6 @@ tr#cabeza{
 	text-align:center;
 }
 
-
-#paso1{
- overflow:auto;
- width:970px;
- height:200px;
- border:solid black 1px;
- margin-left:95px;
- 
-}
 
 #tablaProducto td{
 border:solid black 1px;
@@ -690,8 +774,11 @@ height:50px;
 margin-left:50px;
 }
 
+
+
 #totalAcumulado{
 position:relative;
-left:985px;
+left:840px;
+width:130px;
 }
 	

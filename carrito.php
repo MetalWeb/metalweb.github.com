@@ -61,10 +61,13 @@
 			</ul>
 		</div>
 
-		
-		<h1 id="dulcesDeseos">Tus dulces deseos</h1>
-		
-<div id="paso1">
+<h1 id="dulcesDeseos">Tus dulces deseos</h1>
+
+	
+<div id="paso1">		
+
+
+
 <table id="tablaProducto" cellspacing="0" cellpadding="0" >
   <tr>
     <th>Nombre</th>
@@ -75,25 +78,21 @@
   </tr>
   <?php $pro = conexion("SELECT * FROM pedido"); while ($rsEmp = mysql_fetch_assoc($pro)) { ?>
   <tr>
-    <td><?php  echo $rsEmp['producto']; ?></td>
-    <td>S/.<?php echo $rsEmp['precio']; ?></td>
+    <td><?php echo $rsEmp['producto']; ?></td>
+    <td><?php echo $rsEmp['precio']; ?></td>
     <td><?php echo $rsEmp['cantidad']; ?></td>
-	<td>S/.<?php echo ($rsEmp['cantidad'] * $rsEmp['precio']); ?></td>
+	<td><?php echo ($rsEmp['cantidad'] * $rsEmp['precio']); ?></td>
 	<form method="post" action="eliminar.php">
 	<td><button class="eliminarpro"><input name="idpro" value="<?php echo $rsEmp['id']; ?>" type="hidden"/><img src="imagenes/eliminar.png" /></button></td>
 	</form>
   </tr>
   <?php } ?>
 </table>
-
-</div>
-
-
-<div>
+<div id="sumatotal">
 <p id="totalAcumulado">Total: S/.<?php $suma = conexion("SELECT sum(precio*cantidad) FROM pedido"); $rsEmp = mysql_fetch_assoc($suma); echo $rsEmp['sum(precio*cantidad)'];?>.00 </p>
 </div>
-		
-		
+
+</div>		
 	  
 <div id="paso2">
 
@@ -113,11 +112,11 @@
 					<label for="carritoDistrito" id="label2">Distrito: </label> 
 					<select name="entradaselect" id="distritos">
 	
-					</select><br/>
+					</select>
 					
 					
 					
-					<label for="carritoRef">Referencia:</label> <input id="carritoRef" type="text" name="ref" /> <label for="carritoTel" id="label21">Telefono: </label > <input  id="carritoTel" type="text" name="telf"/><br/>
+					<label for="carritoRef"><br/>Referencia:</label> <input id="carritoRef" type="text" name="ref"/> <label for="carritoTel" id="labeltelf">Telefono: </label > <input  id="carritoTel" type="text" name="telf"/><br/>
 					
 			</form>
 			</div>
@@ -135,7 +134,7 @@
 			<h3>Realice la Transacción a nuestra cuenta bancaria del BCP e introduzca estos datos</h3>
 			
 					<label for="carritoNOpe">Numero de Operacion:</label> <input id="carritoNOpe" type="text" name="nOperacion"/> <br/>
-					<label for="carritoFechaT">Fecha de la Transacción:</label> <input id="carritoFlechaT" type="text" name="fechaTransaccion"/> <br/>
+					<label for="carritoFechaT">Fecha de la Transacción:</label> <input id="carritoFechaT" type="text" name="fechaTransaccion"/> <br/>
 					<label for="carritoMonto">Monto:</label> <input id="carritoMonto" type="text" name="Monto"/> 
 			</div>
 			
