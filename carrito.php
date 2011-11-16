@@ -7,8 +7,8 @@
 	<link href="menu.css" rel="stylesheet" type="text/css"/>
 	<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
 	<script src="script.js" type="text/javascript"></script>
-	
-
+	<link href="datepicker.css" rel="stylesheet" type="text/css" />
+    <script src="jquery.datepicker.js" type="text/javascript"></script>
 	
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
 	<meta name="description" content="M&P desserts es Empresa dedicada a la venta elaboración y distribución de productos alimenticios, postres específicamente y bocaditos en general, sus instalaciones están ubicadas en el distrito Miraflores en la Calle Manuel Tovar 415." />
@@ -91,8 +91,8 @@
 <div id="sumatotal">
 <p id="totalAcumulado">Total: S/.<?php $suma = conexion("SELECT sum(precio*cantidad) FROM pedido"); $rsEmp = mysql_fetch_assoc($suma); echo $rsEmp['sum(precio*cantidad)'];?>.00 </p>
 </div>
+</div>
 
-</div>		
 	  
 <div id="paso2">
 

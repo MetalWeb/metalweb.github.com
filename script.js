@@ -9,6 +9,7 @@ $(document).ready(function() {
 		$("#postre7").hide();
 		
 		
+		
 		var xAlbumPostre = 1;
 		
 		function ocultar_forPostres() {
@@ -222,8 +223,8 @@ $(document).ready(function() {
         
 	    });
 		
+		$("#carritoFechaT").datepicker();
 		
-		
-	 
+
 
 });
