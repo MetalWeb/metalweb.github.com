@@ -470,17 +470,20 @@ padding-left: 5%;
 }
 
 #mapaG{
- float:right;
- margin-top:60px;
- margin-right:15%;
+	 float:right;
+	 margin-top:60px;
+	 margin-right:15%;
+	 width:350px;
+	 height:350px;
+	 border:solid black 1px;
 }
 
 
 
 #boton{
-margin-top:30px;
-margin-left:45%;
-margin-bottom:30px;
+	margin-top:30px;
+	margin-left:45%;
+	margin-bottom:30px;
 }
 
 #contacto{
