@@ -98,8 +98,7 @@
 	}
 	
 	#sugerencia{
-		
-		position:relative;
+		margin: 0 auto;
 		width:860px;
 		height:450px;
 		margin: 0 auto;
@@ -115,6 +114,15 @@
 	
 	}
 	
+	#right_p1{
+		float: right;
+		background-image: url('imagenes/Alfajores.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 150px;
+		height: 144px;
+	}
+	
 	#producto2{
 		border:solid #800000;
 		background-color:#FFE4B5;
@@ -124,7 +132,15 @@
 		float:right;
 		margin-top:-150px;
 		
-
+	}
+	
+	#right_p2{
+		float: right;
+		background-image: url('imagenes/CheeseCake.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 150px;
+		height: 144px;
 	}
 	
 	#producto3{
@@ -137,6 +153,15 @@
 		
 	}
 	
+	#right_p3{
+		float: right;
+		background-image: url('imagenes/cremaVolteada.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 150px;
+		height: 144px;
+	}
+	
 	#producto4{
 		border:solid #800000;
 		background-color:#FFE4B5;
@@ -145,15 +170,21 @@
 		margin-right:5%;
 		float:right;
 		margin-top:-150px;
-		
 	}
 	
-	.IMGMyPRecomienda{
-
-		margin-top:-72;
-		float:right;
+	#right_p4{
+		float: right;
+		background-image: url('imagenes/Muffins.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 150px;
+		height: 144px;
 	}
 	
+	
+	.left_p{
+		float: left;
+	}
 	
 	
 	
@@ -164,7 +195,7 @@
 		margin: 0 auto;
 		background-color:orange;
 		border:solid #FFE4B5;
-		
+		margin-top: 60px;
 	}
 	
 	.baner2{
@@ -663,6 +694,4 @@ margin-left:50px;
 position:relative;
 left:985px;
 }
-
-
 	
